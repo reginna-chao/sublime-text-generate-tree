@@ -1,13 +1,18 @@
 [
   {
-    "id": "edit",
+    "id": "tools",
     "children": [
       {
         "caption": "GenTree",
+        "id": "gentree",
         "children": [
           {
             "command": "generate_tree",
             "caption": "Generate Directory Tree"
+          },
+          {
+            "command": "generate_current_dir_tree",
+            "caption": "Generate Tree for Current Directory"
           }
         ]
       }
