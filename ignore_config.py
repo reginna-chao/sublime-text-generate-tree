@@ -33,7 +33,7 @@ DEFAULT_IGNORE_FOLDERS = {
     'eggs',
     '*.egg-info',
     'build',
-    # 'dist',
+    'dist',
     '.pyc',
     
     # IDE 和編輯器
