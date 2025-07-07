@@ -1,7 +1,7 @@
 [
   {
     "keys": ["ctrl+alt+e"],
-    "command": "tree_foler",
+    "command": "generate_tree",
     "context": [
       { "key": "setting.command_mode", "operator": "equal", "operand": true }
     ]

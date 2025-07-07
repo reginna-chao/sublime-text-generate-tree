@@ -3,11 +3,11 @@
     "id": "edit",
     "children": [
       {
-        "caption": "TreeFolder",
+        "caption": "GenTree",
         "children": [
           {
-            "command": "tree_folder",
-            "caption": "Display Tree View"
+            "command": "generate_tree",
+            "caption": "Generate Directory Tree"
           }
         ]
       }

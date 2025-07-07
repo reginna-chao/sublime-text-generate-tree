@@ -1,8 +1,0 @@
-{
-  "name": "TreeFolder",
-  "version": "1.0.0",
-  "description": "Display Tree View",
-  "author": "Reginna",
-  "dependencies": [],
-  "platforms": ["windows"]
-}

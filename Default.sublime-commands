@@ -1,10 +1,10 @@
 [
   {
-    "caption": "TreeFolder: Generate Directory Tree",
+    "caption": "GenTree: Generate Directory Tree",
     "command": "generate_tree"
   },
   {
-    "caption": "TreeFolder: Generate Tree for Current Directory",
+    "caption": "GenTree: Generate Tree for Current Directory",
     "command": "generate_tree_current_dir"
   }
 ]
