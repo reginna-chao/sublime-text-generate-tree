@@ -1,6 +1,10 @@
 [
-    {
-        "caption": "MyAwesomePackage: Example Command",
-        "command": "example"
-    }
+  {
+    "caption": "TreeFolder: Generate Directory Tree",
+    "command": "generate_tree"
+  },
+  {
+    "caption": "TreeFolder: Generate Tree for Current Directory",
+    "command": "generate_tree_current_dir"
+  }
 ]

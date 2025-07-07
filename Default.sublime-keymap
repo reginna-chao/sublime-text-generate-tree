@@ -1,9 +1,9 @@
 [
-    {
-        "keys": ["ctrl+alt+e"],
-        "command": "example",
-        "context": [
-            { "key": "setting.command_mode", "operator": "equal", "operand": true }
-        ]
-    }
+  {
+    "keys": ["ctrl+alt+e"],
+    "command": "tree_foler",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true }
+    ]
+  }
 ]

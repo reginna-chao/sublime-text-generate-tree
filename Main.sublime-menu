@@ -1,16 +1,16 @@
 [
-    {
-        "id": "edit",
+  {
+    "id": "edit",
+    "children": [
+      {
+        "caption": "TreeFolder",
         "children": [
-            {
-                "caption": "MyAwesomePackage",
-                "children": [
-                    {
-                        "command": "example",
-                        "caption": "Example Command"
-                    }
-                ]
-            }
+          {
+            "command": "tree_folder",
+            "caption": "Display Tree View"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]

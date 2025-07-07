@@ -1,8 +1,8 @@
 {
-  "name": "MyAwesomePackage",
+  "name": "TreeFolder",
   "version": "1.0.0",
-  "description": "A Sublime Text package example.",
-  "author": "Your Name",
+  "description": "Display Tree View",
+  "author": "Reginna",
   "dependencies": [],
-  "platforms": ["*"]
+  "platforms": ["windows"]
 }
