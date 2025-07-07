@@ -1,0 +1,9 @@
+[
+    {
+        "keys": ["ctrl+alt+e"],
+        "command": "example",
+        "context": [
+            { "key": "setting.command_mode", "operator": "equal", "operand": true }
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "MyAwesomePackage",
+  "version": "1.0.0",
+  "description": "A Sublime Text package example.",
+  "author": "Your Name",
+  "dependencies": [],
+  "platforms": ["*"]
+}

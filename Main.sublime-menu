@@ -1,0 +1,16 @@
+[
+    {
+        "id": "edit",
+        "children": [
+            {
+                "caption": "MyAwesomePackage",
+                "children": [
+                    {
+                        "command": "example",
+                        "caption": "Example Command"
+                    }
+                ]
+            }
+        ]
+    }
+]
