@@ -210,9 +210,24 @@ class GenerateTreeCommand(sublime_plugin.WindowCommand):
         
         try:
             entries = sorted(os.listdir(path))
-            # 過濾隱藏文件和忽略的資料夾
-            entries = [e for e in entries if not e.startswith('.') and not self._should_ignore(e)]
+
+            # 智能過濾：只忽略真正的"垃圾"隱藏檔案，保留有用的配置檔案
+            system_hidden = {'.DS_Store', '.Thumbs.db', '.directory', '._*'}  # 系統生成的檔案
             
+            filtered_entries = []
+            for e in entries:
+                # 檢查是否在自定義忽略清單中
+                if self._should_ignore(e):
+                    continue
+                
+                # 檢查是否為系統隱藏檔案（真正需要隱藏的）
+                if any(e.startswith(pattern.replace('*', '')) for pattern in system_hidden if '*' in pattern) or e in system_hidden:
+                    continue
+                    
+                filtered_entries.append(e)
+            
+            entries = filtered_entries
+
             # 分離目錄和文件，目錄在前
             dirs = []
             files = []
@@ -325,7 +340,7 @@ class GenerateCurrentDirTreeCommand(sublime_plugin.WindowCommand):
                 
                 options.extend([
                     ["自定義忽略清單", "手動輸入要忽略的資料夾名稱"],
-                    ["不忽略任何資料夾", "顯示所有資料夾和文件"]
+                    ["顯示全部", "包含所有檔案和隱藏檔案（僅忽略系統檔案）"]
                 ])
                 
                 self.window.show_quick_panel(options, self.on_ignore_option_selected)
